@@ -1,5 +1,6 @@
 ---
 - name: Connection Test
   tasks:
-  - name: Echo Output to Shell
-    shell: echo "Connection Successful."
+    - name: Message Output
+      debug:
+        msg: "Connection successful."
