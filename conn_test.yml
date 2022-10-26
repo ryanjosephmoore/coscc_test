@@ -2,4 +2,4 @@
 - name: Connection Test
   tasks:
   - name: Echo Output to Shell
-    shell: echo "Conmection Successful."
+    shell: echo "Connection Successful."
