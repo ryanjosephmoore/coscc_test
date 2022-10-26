@@ -1,5 +1,4 @@
-- name: Connection Test
-  tasks:
-    - name: Message Output
-      debug:
-        msg: "Connection successful."
+- name: Check if SSHD is running
+  hosts: all
+  command: systemctl status ssh
+  ignore_errors: yes
