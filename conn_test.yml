@@ -1,6 +1,6 @@
 ---
 - name: Hello World!
-  hosts: all
+  hosts: "{{ target_host | default('all') }} "
   tasks:
   - name: Hello World!
     shell: echo "Hi! Tower is working!"
