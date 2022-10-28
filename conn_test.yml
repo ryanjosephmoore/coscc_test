@@ -1,4 +1,7 @@
-- name: Check if SSHD is running
+---
+- name: Hello World!
   hosts: all
-  command: systemctl status ssh
-  ignore_errors: yes
+
+  tasks:
+  - name: Hello World!
+    shell: echo "Hi! Tower is working!"
